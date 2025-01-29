@@ -1,6 +1,6 @@
 * {
-  padding: 3;
-  margin: 3;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 body {
@@ -119,7 +119,7 @@ h2.title {
 .cart {
   position: absolute;
   top: 0;
-  right: -100%;
+  right: -200%;
   width: 400px;
   height: 100vh;
   padding: 20px;
@@ -230,4 +230,19 @@ h2.title {
   right: 0;
   font-size: 2rem;
   cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: gray;
+  }
+  .nav {
+    padding: 20px;
+  }
 }
